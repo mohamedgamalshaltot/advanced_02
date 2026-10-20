@@ -98,6 +98,11 @@ namespace c____Advanced__02
                  }
              }*/
             #endregion
+            #region Q 13
+            // Q13: What does the 'default' keyword do in generics?
+            // The 'default' keyword in generics is used to obtain the default value of a type parameter. For reference types, it returns null, and for value types, it returns the zero-initialized value (e.g., 0 for int, false for bool). This is useful when you want to initialize a variable of a generic type without knowing its specific type at compile time.
+
+            #endregion
 
 
         }
