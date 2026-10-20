@@ -64,6 +64,17 @@ namespace c____Advanced__02
                  public T Value { get; set; }
              }*/
             #endregion
+            #region Q 10
+            //Q10:  What is the interface constraint? Write an example.
+            // The interface constraint in C# is used in generic type definitions to specify that the type parameter must implement a specific interface. This allows the generic method or class to call methods defined in that interface on the type parameter.
+            /* public class Example<T> where T : IDisposable
+            {
+                public void DisposeItem(T item)
+                {
+                    item.Dispose();
+                }
+            }*/
+            #endregion
 
 
 
