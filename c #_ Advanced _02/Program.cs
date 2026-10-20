@@ -103,6 +103,27 @@ namespace c____Advanced__02
             // The 'default' keyword in generics is used to obtain the default value of a type parameter. For reference types, it returns null, and for value types, it returns the zero-initialized value (e.g., 0 for int, false for bool). This is useful when you want to initialize a variable of a generic type without knowing its specific type at compile time.
 
             #endregion
+            #region Q 14
+            //Q14: Write a SafeList<T> that returns default when the index is invalid.
+            /* public class SafeList<T>
+            {
+                private List<T> _list = new List<T>();
+                public void Add(T item)
+                {
+                    _list.Add(item);
+                }
+                public T Get(int index)
+                {
+                    if (index < 0 || index >= _list.Count)
+                    {
+                        return default(T);
+                    }
+                    return _list[index];
+                }
+            }*/
+
+
+            #endregion
 
 
         }
