@@ -47,6 +47,15 @@ namespace c____Advanced__02
                  public T Value { get; set; }
              }*/
             #endregion
+            #region Q 08
+            // Q8: What is the 'class' constraint? Write an example.
+            // The 'class' constraint in C# is used in generic type definitions to specify that the type parameter must be a reference type (i.e., a class). This means that the type argument provided must be a class or an interface, allowing for null values and reference semantics.
+            /* public class Example<T> where T : class
+             {
+                 public T Value { get; set; }
+             }*/
+
+            #endregion
 
 
 
