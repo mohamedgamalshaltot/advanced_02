@@ -151,8 +151,24 @@ namespace c____Advanced__02
             // In C#, static members in generic types are shared across all instances of the generic type, but they are specific to each closed constructed type. This means that if you have a generic class with a static member, each unique instantiation of that generic class with different type parameters will have its own separate copy of the static member.
             // For example, if you have a generic class `MyClass<T>` with a static field, `MyClass<int>` and `MyClass<string>` will each have their own separate static field, and changes to the static field in
             // `MyClass<int>` will not affect the static field in `MyClass<string>`. This behavior allows for type-specific static data while maintaining the benefits of generics.
-           
 
+
+            #endregion
+            #region Q 19
+            // Q19: How can you inherit from a generic class?
+            // In C#, you can inherit from a generic class by specifying the type parameters in the derived class. The derived class can either use the same type parameters as the base class or specify its own type parameters. When inheriting from a generic class, you can also provide specific types for the base class's type parameters.
+            // For example, if you have a generic base class `BaseClass<T>`, you can create a derived class `DerivedClass<U>` that inherits from it like this:
+            /* public class BaseClass<T>
+             {
+                 public T Value { get; set; }
+             }
+             public class DerivedClass<U> : BaseClass<U>
+             {
+                 public void DisplayValue()
+                 {
+                     Console.WriteLine(Value);
+                 }
+             }*/
             #endregion
 
 
