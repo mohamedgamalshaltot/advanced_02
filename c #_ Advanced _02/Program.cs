@@ -144,7 +144,15 @@ namespace c____Advanced__02
             // Covariance allows a method to return a more derived type than that specified by the generic type parameter. It is achieved using the 'out' keyword and is primarily used for return types. Covariance enables you to treat a collection of a derived type as a collection of its base type, allowing for greater flexibility in method return types.
             // Contravariance, on the other hand, allows a method to accept parameters of a less derived type than that specified by the generic type parameter. It is achieved using the 'in' keyword and is primarily used for method parameters. Contravariance enables you to treat a collection of a base type as a collection of its derived type, allowing for greater flexibility in method parameters.
             // In summary, covariance is about return types and uses 'out', while contravariance is about parameter types and uses 'in'. Both concepts enhance the flexibility and reusability of generic code in C#.
-            
+
+            #endregion
+            #region Q 18
+            // Q18: How do static members work in generic types?
+            // In C#, static members in generic types are shared across all instances of the generic type, but they are specific to each closed constructed type. This means that if you have a generic class with a static member, each unique instantiation of that generic class with different type parameters will have its own separate copy of the static member.
+            // For example, if you have a generic class `MyClass<T>` with a static field, `MyClass<int>` and `MyClass<string>` will each have their own separate static field, and changes to the static field in
+            // `MyClass<int>` will not affect the static field in `MyClass<string>`. This behavior allows for type-specific static data while maintaining the benefits of generics.
+           
+
             #endregion
 
 
