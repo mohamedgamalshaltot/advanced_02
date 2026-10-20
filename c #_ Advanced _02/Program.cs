@@ -136,6 +136,14 @@ namespace c____Advanced__02
             // Contravariance in C# allows a method to accept parameters of a less derived type than that specified by the generic type parameter. It is primarily used with interfaces and delegates. The 'in' keyword is used to declare a type parameter as contravariant, meaning it can be substituted with a less derived type.
             // For example, if you have an interface `IComparer<in T>`, you can use it to compare objects of a less derived type than the one specified by `T`. This allows for greater flexibility in method parameters and enables polymorphic behavior in generic collections.
             // Contravariance is particularly useful when working with collections of objects, as it allows you to treat a collection of a base type as a collection of its derived type, enabling more flexible and reusable code.
+
+            #endregion
+            #region Q 17
+            // Q17: What is the difference between covariance and contravariance?
+            // Covariance and contravariance are two concepts in C# that deal with type compatibility in generic programming, particularly with interfaces and delegates.
+            // Covariance allows a method to return a more derived type than that specified by the generic type parameter. It is achieved using the 'out' keyword and is primarily used for return types. Covariance enables you to treat a collection of a derived type as a collection of its base type, allowing for greater flexibility in method return types.
+            // Contravariance, on the other hand, allows a method to accept parameters of a less derived type than that specified by the generic type parameter. It is achieved using the 'in' keyword and is primarily used for method parameters. Contravariance enables you to treat a collection of a base type as a collection of its derived type, allowing for greater flexibility in method parameters.
+            // In summary, covariance is about return types and uses 'out', while contravariance is about parameter types and uses 'in'. Both concepts enhance the flexibility and reusability of generic code in C#.
             
             #endregion
 
