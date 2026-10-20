@@ -170,6 +170,41 @@ namespace c____Advanced__02
                  }
              }*/
             #endregion
+            #region Q 20
+            // Q20: Complete Exercise - Create a generic Cache<TKey, TValue>with Add, Get, Remove, Contains, and expiration support. 
+            // Here's a simple implementation of a generic Cache<TKey, TValue> class with the specified methods and expiration support:
+            /* public class Cache<TKey, TValue>
+             {
+                 private Dictionary<TKey, (TValue Value, DateTime Expiration)> _cache = new Dictionary<TKey, (TValue, DateTime)>();
+                 public void Add(TKey key, TValue value, TimeSpan expiration)
+                 {
+                     _cache[key] = (value, DateTime.Now.Add(expiration));
+                 }
+                 public TValue Get(TKey key)
+                 {
+                     if (_cache.TryGetValue(key, out var entry))
+                     {
+                         if (DateTime.Now < entry.Expiration)
+                         {
+                             return entry.Value;
+                         }
+                         else
+                         {
+                             _cache.Remove(key);
+                         }
+                     }
+                     return default(TValue);
+                 }
+                 public void Remove(TKey key)
+                 {
+                     _cache.Remove(key);
+                 }
+                 public bool Contains(TKey key)
+                 {
+                     return _cache.ContainsKey(key) && DateTime.Now < _cache[key].Expiration;
+                 }
+             }*/
+            #endregion
 
 
         }
