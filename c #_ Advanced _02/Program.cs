@@ -39,6 +39,17 @@ namespace c____Advanced__02
                 IEnumerable<T> GetAll();
             }*/
             #endregion
+            #region Q 07
+            // Q7: What is the 'struct' constraint? Write an example.
+            // The 'struct' constraint in C# is used in generic type definitions to specify that the type parameter must be a value type (i.e., a struct). This means that the type argument provided must be a non-nullable value type, such as int, double, or a user-defined struct.
+            /* public class Example<T> where T : struct
+             {
+                 public T Value { get; set; }
+             }*/
+            #endregion
+
+
+
         }
     }
 }
