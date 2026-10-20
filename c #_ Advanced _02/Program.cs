@@ -86,6 +86,18 @@ namespace c____Advanced__02
                  }
              }*/
             #endregion
+            #region Q 12
+            // Q12: How do you apply multiple constraints? Write an example. 
+            // In C#, you can apply multiple constraints to a generic type parameter by separating them with commas. This allows you to specify that the type parameter must satisfy multiple conditions, such as being a reference type, implementing an interface, and having a parameterless constructor.
+            /* public class Example<T> where T : class, IDisposable, new()
+             {
+                 public void CreateAndDispose()
+                 {
+                     T item = new T();
+                     item.Dispose();
+                 }
+             }*/
+            #endregion
 
 
         }
