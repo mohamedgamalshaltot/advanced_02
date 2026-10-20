@@ -75,7 +75,17 @@ namespace c____Advanced__02
                 }
             }*/
             #endregion
-
+            #region Q 11
+            // Q11: What is the base class constraint? Write an example.
+            // The base class constraint in C# is used in generic type definitions to specify that the type parameter must inherit from a specific base class. This allows the generic method or class to access members of the base class on the type parameter.
+            /* public class Example<T> where T : BaseClass
+             {
+                 public void CallBaseMethod(T item)
+                 {
+                     item.BaseMethod();
+                 }
+             }*/
+            #endregion
 
 
         }
