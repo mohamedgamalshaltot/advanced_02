@@ -129,6 +129,13 @@ namespace c____Advanced__02
             // Covariance in C# allows a method to return a more derived type than that specified by the generic type parameter. It is primarily used with interfaces and delegates. The 'out' keyword is used to declare a type parameter as covariant, meaning it can be substituted with a more derived type.
             // For example, if you have an interface `IEnumerable<out T>`, you can use it to return a collection of a more derived type than the one specified by `T`. This allows for greater flexibility in method return types and enables polymorphic behavior in generic collections.
             // Covariance is particularly useful when working with collections of objects, as it allows you to treat a collection of a derived type as a collection of its base type, enabling more flexible and reusable code.
+
+            #endregion
+            #region Q 16
+            // Q16: What is contravariance? Explain the 'in' keyword.
+            // Contravariance in C# allows a method to accept parameters of a less derived type than that specified by the generic type parameter. It is primarily used with interfaces and delegates. The 'in' keyword is used to declare a type parameter as contravariant, meaning it can be substituted with a less derived type.
+            // For example, if you have an interface `IComparer<in T>`, you can use it to compare objects of a less derived type than the one specified by `T`. This allows for greater flexibility in method parameters and enables polymorphic behavior in generic collections.
+            // Contravariance is particularly useful when working with collections of objects, as it allows you to treat a collection of a base type as a collection of its derived type, enabling more flexible and reusable code.
             
             #endregion
 
